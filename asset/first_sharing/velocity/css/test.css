@@ -1,0 +1,25 @@
+.container{
+    margin: 50px auto;
+    width:100px;
+}
+.title{
+    width:100%;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 200px;
+}
+.box1{
+    width:100px;
+    height:100px;
+    background-color: pink;
+}
+.box2{
+    width:100px;
+    height:100px;
+    background-color: darkorange;
+}
+.box3{
+    width:100px;
+    height:100px;
+    background-color: lightgreen;
+}

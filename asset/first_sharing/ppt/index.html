@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<title>The first sharing of OYJ</title>
+	<link href='css/general.css' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/wallop.css">
+	<link rel="stylesheet" href="css/wallop--slide.css">
+	<link rel="stylesheet" href="css/chocolat.css" />
+</head>
+<body>
+<!--................................................... ABOUT -->
+<section id="about">
+	<div class="content">
+	  	<p>Hi, I'm</p>
+	  	<div class="name">OuYang Jing<span class="info">—The member of the front end team.</span></div>
+	  	<div class="topic">
+	      	<div class="topic-title"> My topic of sharing is as follows:</div>
+	      	<p class="topic-content">1.The basic concepts of Velocity.js</p>
+	      	<p class="topic-content">2.The features of Velocity.js</p>
+	      	<p class="topic-content">3.An animation case implemented with Velocity.js</p>
+	      	<p class="topic-content">4.Velocity.js in Vue</p>
+	  	</div>
+	</div>
+	<div class="next">Scroll to see my share <img src="images/ic-arrow-down-dark.png" /></div>
+	<div class="logo"></div>
+</section>
+<!--................................................... topic 1 -->
+<section id="part1">
+	<div class="Wallop--slide Wallop--2">
+		<!-- logo -->
+		<div class="logo">
+			<div class="logo-circle circle-border1">Part 1</div>
+		</div>
+		<!-- content 1 -->
+	  	<div class="Wallop-item">
+	    	<div class="content left6">
+	      		<h1>Compare the three ways to implement animations</h1>
+	      		<div class="compare"><span class="shrinkIn">Velocity.js</span><span class="question">？</span><span class="shrinkIn">CSS transition</span> <span class="question">？</span><span class="shrinkIn">jQuery animation</span></div>
+	   		 </div>
+	  	</div>
+	   <!-- jQuery animation -->
+		<div class="Wallop-item">
+			<div class="content left6">
+				<h1>jQuery animation</h1>
+				<div class="part1-main">
+					<p>1、<strong>layout thrashing</strong> will cause stutters of animation at the beginning. </p>
+					<p>2、it has large memory consumption, and it always triggers <strong>garbage collection</strong>, causing stutters of animation in the running.  </p>
+					<p>3、it's not use <strong>RAF</strong>.</p>
+				</div>
+			</div>
+		</div>
+		<!-- CSS transition -->
+		<div class="Wallop-item" >
+			<div class="content left6">
+				<h1>CSS transition</h1>
+				<div class="part1-main">
+					<p>1、Avoiding memory consumption to reduce the stutters. </p>
+					<p>2、Using a mechanism similar to <strong>RAF</strong>.</p>
+					<p>3、Hardware speedup. </p>
+					<p>4、The browser below IE10<strong>（ IE8、IE9 ）</strong>does not support transition, and it can't be completely controlled by JS</p>
+				</div>
+			</div>
+		</div>
+		<!-- Velocity.js -->
+		<div class="Wallop-item">
+			<div class="content left6">
+				<h1>Velocity.js</h1>
+				<div class="part1-main">
+					<div>A new animation engine, mading a lot of optimizations in this area:</div>
+					<p>1、Fine tuning the <strong>stack</strong> to minimize the <strong>layout thrashing</strong>.</p>
+					<p>2、<strong>Cache</strong> the property values in the chain operation to <strong>minimize</strong> the DOM query operation.</p>
+				</div>
+			</div>
+		</div>
+		<div class="Wallop-item">
+			<div class="content left6">
+				<h1>Other advantages of Velocity.js</h1>
+				<div class="part1-main">
+					<p>1、More <strong>lightweight</strong>, greatly improving the performance and workflow of UI animation.</p>
+					<p>2、<strong>free</strong> and easy to use.</p>
+				</div>
+				<a  class="velocity-link" target="_blank" href="http://velocityjs.org/">—> Velocity.js | GitHub</a>
+				<a  class="velocity-link" target="_blank" href="http://www.mrfront.com/docs/velocity.js/index.html">—> Velocity.js | 中文文档</a>
+			</div>
+		</div>
+
+		<!-- left right button-->
+	  	<button class="Wallop-buttonPrevious slide-btn light-l" disabled="true">&nbsp;</button>
+	  	<button class="Wallop-buttonNext slide-btn light-r">&nbsp;</button>
+		<!-- info -->
+	  	<div class="next">Next part: <strong>The features of Velocity.js</strong> <img src="images/ic-arrow-down-dark.png" /></div>
+	</div>
+</section>
+
+<!--................................................... topic 2 -->
+<section id="part2">
+	<div class="Wallop--slide Wallop--3">
+		<!-- logo -->
+		<div class="logo">
+			<div class="logo-circle circle-border2">Part 2</div>
+		</div>
+		<!-- 功能 -->
+		<div class="Wallop-item">
+			<div class="content left6">
+				<h1>The features of Velocity.js</h1>
+				<p class="feature-title">Velocity is an animation engine with the same API as jQuery's $.animate(). It works with and without jQuery. </p>
+				<div class="part2-label">
+					<span class="label">color animation</span>
+					<span class="label">transforms</span>
+					<span class="label">loops</span>
+				</div>
+				<div class="part2-label">
+					<span class="label">easings</span>
+					<span class="label">SVG support</span>
+					<span class="label">scrolling</span>
+				</div>
+			</div>
+		</div>
+		<div class="Wallop-item">
+			<div class="content left6">
+				<h1>The features of Velocity.js</h1>
+				<div class="part2-main">
+					<!-- <p>It is the best of jQuery and CSS transitions combined.</p> -->
+					<p>It is works everywhere — back to <strong>IE8</strong> and <strong>Android 2.3</strong>. </p>
+					<p>Velocity has now been used by thousands of Companies in its own projects, such as <strong>WhatsApp, Uber, Samsung, Tumblr, Windows</strong>.</p>
+				</div>
+				<a  class="velocity-link" target="_blank" href="http://libscore.com/#$.Velocity">—> Libscore-Velocity.js</a>
+			</div>
+		</div>
+		<!-- 用法 -->
+		<div class="Wallop-item">
+			<div class="content left6">
+				<h1>The basic usage of Velocity.js</h1>
+				<div class="modules">
+					<p class="module">Dependencies -></p>
+					<p class="module">Arguments -></p>
+					<p class="module">Properties Map -></p>
+					<p class="module">Chaining -></p>
+				</div>
+			</div>
+		</div>
+
+		<button class="Wallop-buttonPrevious slide-btn light-l" disabled="true">&nbsp;</button>
+		<button class="Wallop-buttonNext slide-btn light-r">&nbsp;</button>
+		<!-- mask -->
+		<div id="gallery-part2" class="gallery">
+			<a class="chocolat-image btn-dark" href="images/code.png" >
+			  View Picture
+			</a>
+			<a class="chocolat-image hidden" href="images/argument1.png">&nbsp;</a>
+			<a class="chocolat-image hidden" href="images/argument2.png">&nbsp;</a>
+			<a class="chocolat-image hidden" href="images/argument3.png">&nbsp;</a>
+			<a class="chocolat-image hidden" href="images/property-map.png">&nbsp;</a>
+			<a class="chocolat-image hidden" href="images/chaining.png">&nbsp;</a>
+		</div>
+
+		<div class="next">Next part: <strong>An animation case</strong> <img src="images/ic-arrow-down.png" /></div>
+	</div>
+</section>
+
+<!--................................................... topic 3 -->
+<section id="part3">
+	<div class="Wallop--slide Wallop--4">
+		<!-- logo -->
+		<div class="logo">
+			<div class="logo-circle circle-border3">Part 3</div>
+		</div>
+		<!-- content 1 -->
+		<div class="Wallop-item">
+			<div class="content left6">
+				<h1>Code examples</h1>
+				<p class="example"><a target="_blank" href="../velocity/test.html">-> Three implementation methods of sequence animation.</a></p>
+				<p class="example"><a target="_blank" href="../velocity/demo.html">-> Implement a pop up photo frame with Velocity.js.</a></p>
+			</div>
+		</div>
+		<!-- content 2 -->
+		<div class="Wallop-item">
+			<div class="content left6">
+				<h1>Conclusion</h1>
+				<div class="conclusion">Three  methods of sequence animation:
+					<p>1、duration and delay</p>
+					<p>2、complete</p>
+					<p>3、RunSequence</p>
+				</div>
+				<p>Velocity.js is especially suitable for scenes with <strong>animated sequences</strong></p>
+			</div>
+		</div>
+		<!-- left right button -->
+		<button class="Wallop-buttonPrevious slide-btn dark-l" disabled="true">&nbsp;</button>
+		<button class="Wallop-buttonNext slide-btn dark-r">&nbsp;</button>
+		<!-- info -->
+		<div class="next">Next part: <strong>Velocity.js in Vue</strong> <img src="images/ic-arrow-down-dark.png" /></div>
+	</div>
+</section>
+
+<!--................................................... topic 4 -->
+<section id="part4">
+	<div class="Wallop--slide Wallop--5">
+		<!-- logo -->
+		<div class="logo">
+			<div class="logo-circle circle-border4">Part 4</div>
+		</div>
+		<!-- content 1 -->
+	  	<div class="Wallop-item">
+	    	<div class="content left6">
+	      		<h1>Velocity.js in Vue</h1>
+	      		<p class="part4-main">Vue offers many different ways to apply transition effects when inserting, updating, or removing DOM.</p>
+	      		<p class="example">Vue components(transition)<span class="plus">+</span> JS animation library(Velocity.js)</p>
+	   		 </div>
+	  	</div>
+	  	<!-- content 2 -->
+	  	<div class="Wallop-item">
+	    	<div class="content left6">
+	      		<h1>JavaScript hook</h1>
+	      		<p class="attention-title">Attention:</p>
+	      		<div class="attention-content">
+		      		<p>1、In the enter and leave functions, the <strong>callback function（done）</strong>is required. Otherwise, they will be called synchronously, and the transition will be done immediately.</p>
+		      		<p>2、To use <strong> v-bind : css = "false" </strong>. Vue skips the detection of CSS. It can also avoid the effect of CSS during the transition.</p>
+	      		</div>
+	   		 </div>
+	  	</div>
+	  	<!-- content 3 -->
+	  	<div class="Wallop-item">
+	    	<div class="content left6">
+	      		<p class="end">thanks, Mes chers amis!</p>
+	   		</div>
+	  	</div>
+		<!-- mask -->
+		<div id="gallery-part4" class="gallery">
+			<a class="chocolat-image btn-dark" href="images/vue-velocity1.png" >
+			  View Picture
+			</a>
+			<a class="chocolat-image hidden" href="images/vue-velocity2.png">&nbsp;</a>
+		</div>
+		<!-- left right button-->
+	  	<button class="Wallop-buttonPrevious slide-btn light-l" disabled="true">&nbsp;</button>
+	  	<button class="Wallop-buttonNext slide-btn light-r">&nbsp;</button>
+		<!-- info -->
+	  	<div class="next"><strong>The last</strong> <img src="images/ic-arrow-down-dark.png" /></div>
+
+	</div>
+</section>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/velocity.min.js"></script>
+	<script type="text/javascript" src="js/velocity.ui.min.js"></script>
+	<script type="text/javascript" src="js/velocity.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.panelSnap.js"></script>
+    <script src="js/Wallop.js"></script>
+    <script type="text/javascript" src="js/jquery.chocolat.js"></script>
+  	<script>
+        // New instance of Wallop
+       /* var slider1 = document.querySelector('.Wallop--1');
+        new Wallop(slider1, {
+          carousel: false
+        });*/
+        var slider2 = document.querySelector('.Wallop--2');
+        new Wallop(slider2, {
+          carousel: false
+        });
+        var slider3 = document.querySelector('.Wallop--3');
+        new Wallop(slider3, {
+          carousel: false
+        });
+        var slider4 = document.querySelector('.Wallop--4');
+        new Wallop(slider4, {
+          carousel: false
+        });
+        var slider5 = document.querySelector('.Wallop--5');
+        new Wallop(slider5, {
+          carousel: false
+        });
+
+        //====================================== Panel Snap ===
+        jQuery(function($) {
+          // Basic demo
+          $('body').panelSnap();
+        });
+
+        // ===================================== google analytics ===
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        try {
+        var pageTracker = _gat._getTracker("UA-1906255-3");
+        pageTracker._trackPageview();
+        } catch(err) {}
+
+        // ========================================== CHOCOLAT LIGHTBOX ===
+        $(function(){
+            $('#gallery-part1').Chocolat({
+                imageSize: 'contain'
+            });
+            $('#gallery-part2').Chocolat({
+                imageSize: 'contain'
+            });
+            $('#gallery-part3').Chocolat({
+                imageSize: 'contain'
+            });
+            $('#gallery-part4').Chocolat({
+                imageSize: 'contain'
+            });
+        });
+      </script>
+  </body>
+</html>
